@@ -1,0 +1,10 @@
+<md-card *ngFor="let task of tasks">
+    <md-card-title-group>
+        <md-card-title>{{task.title}}</md-card-title>
+    </md-card-title-group>
+    <md-card-actions align="start">
+        <button md-raised-button [disabled]="task.completed" color="primary" (click)="done(task)">
+        Done!
+        </button>
+    </md-card-actions>
+</md-card>

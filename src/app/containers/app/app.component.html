@@ -1,0 +1,13 @@
+<md-sidenav-container fullscreen>
+
+    <task-sidenav [opened]="leftNavOpened">
+        <task-nav-item icon="list" url="/tasks">My Tasks</task-nav-item>
+        <task-nav-item icon="playlist_add" url="/add">Add Task</task-nav-item>
+    </task-sidenav>
+
+    <task-toolbar (openMenu)="openMenu()">
+    </task-toolbar>
+
+    <router-outlet></router-outlet>
+
+</md-sidenav-container>

@@ -1,0 +1,16 @@
+<md-card>
+    <md-card-title>Add a new task</md-card-title>
+    <md-card-content>
+        <form role="form" [formGroup]="taskForm" novalidate (ngSubmit)="onSubmit()">
+
+            <md-input-container>
+                <input mdInput placeholder="Add a new task" formControlName="taskName" required>
+            </md-input-container>
+
+            <button md-raised-button color="accent" type="submit">
+                Add
+            </button>
+
+        </form>
+    </md-card-content>
+</md-card>
